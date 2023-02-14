@@ -1,0 +1,14 @@
+void ZHETRD(char uplo, int n, float complex A[n][n], float Areal[n][n], float Aimag[n][n], float D[n], float E[n - 1], float complex tau[n - 1]);
+void compute_hessenberg(int n, float resultReal[n][n], float resultImag[n][n], float complex a[n][n], float complex tau[n-1], float D[n], float Er[n]);
+float complex conjunction(float xreal, float ximag);
+void DLADIV(float A, float B, float C, float D, float *P, float *Q);
+float complex ZLADIV(float complex x, float complex y);
+float DZNRM2(int n, float complex x[n], float xreal[n], float ximag[n]);
+float DLAPY3(float X, float Y, float Z);
+void ZAXPY(int n, float complex *za, float complex zx[n], float zxreald[n], float zximagd[n], float complex zy[n]);
+float complex ZDOTC(int n, float complex zx[n], float complex zy[n]);
+void ZSCAL(int n, float complex za, float complex zx[n], float zxreal[n], float zximag[n]);
+void ZHEMV(char uplo, int n, float complex alpha, float complex A[n][n], float complex x[n], float complex beta, float complex y[n]);
+void ZHER2(char uplo, int n, float complex alpha, float complex x[n], float complex y[n], float complex A[n][n]);
+void ZLARFG(int n, float complex *alpha, float complex x[n - 1], float *xreal, float ximag[n - 1], float complex *tau);
+void ZHETD2(char uplo, int n, float complex A[n][n], float Areal[n][n], float Aimag[n][n], float D[n], float E[n - 1], float complex tau[n - 1]);
